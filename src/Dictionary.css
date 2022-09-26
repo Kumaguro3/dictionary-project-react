@@ -1,14 +1,20 @@
-.Dictionary {
+.app {
+  background-color: antiquewhite;
+}
+
+.dictionary {
   background-color: rgb(132, 128, 128);
 }
 
 .app-header {
   text-align: center;
   font-weight: bold;
+  margin-bottom: 20px 0;
 }
 
 .app-footer {
   text-align: center;
+  margin: 30px 0;
 }
 
 .dictionary {
