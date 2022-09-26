@@ -10,7 +10,7 @@ export default function Dictionary() {
 
   function Search(event) {
     event.preventDefault();
-    alert("Searching for ${keyWord} definition");
+    alert(`Searching for ${keyWord} definition`);
   }
   return (
     <div className="dictionary ">
