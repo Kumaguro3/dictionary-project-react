@@ -1,0 +1,17 @@
+.Dictionary {
+  background-color: rgb(132, 128, 128);
+}
+
+.app-header {
+  text-align: center;
+  font-weight: bold;
+}
+
+.app-footer {
+  text-align: center;
+}
+
+.dictionary {
+  text-align: center;
+  font-weight: bold;
+}
