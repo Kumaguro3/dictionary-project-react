@@ -19,14 +19,12 @@ export default function Dictionary() {
     event.preventDefault();
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyWord}`;
     axios.get(apiUrl).then(HandleResponse);
-
-    alert(`Searching for ${keyWord} definition`);
   }
 
   return (
     <div className="dictionary ">
       <div className="container">
-        <h1>Hello to dictionary</h1>
+        <h1>Dictionary</h1>
         <form className="form" onSubmit={Search}>
           <input
             type="search"
