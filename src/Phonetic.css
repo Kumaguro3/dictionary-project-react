@@ -1,3 +1,7 @@
 .phonetic {
   text-align: center;
 }
+
+.phonetic .phonetic-audio {
+  width: 15px;
+}
