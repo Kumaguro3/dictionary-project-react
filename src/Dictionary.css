@@ -1,8 +1,6 @@
 .app {
-  background-color: rgb(249, 245, 240);
-  width: fit-content;
-  min-width: 300px;
-  max-width: 1280px;
+  background: lightblue url("dictionary-word-background.webp") no-repeat fixed
+    center;
 }
 
 .app-header {
@@ -13,7 +11,6 @@
 
 .app-footer {
   text-align: center;
-  margin: 30px 0;
 }
 
 .dictionary .container-form,
@@ -23,8 +20,8 @@
   padding: 30px;
   margin: 30px 60px 30px 60px;
   border-radius: 10px;
-  box-shadow: 2px 2px 2px 2px rgb(156, 156, 156);
-  background-color: rgb(249, 233, 233);
+  box-shadow: 2px 2px 2px 2px rgb(178, 177, 177);
+  background-color: rgba(224, 224, 224, 0.7);
 }
 
 .phonetic {
@@ -36,8 +33,7 @@
   padding: 30px;
   margin: 20px 0px 0 20px;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px 1px rgb(156, 156, 156);
-  background-color: rgb(249, 233, 233);
+  background-color: rgba(224, 224, 224, 0.6);
 }
 
 input {
