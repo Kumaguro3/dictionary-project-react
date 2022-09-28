@@ -23,7 +23,7 @@ export default function Dictionary() {
 
   return (
     <div className="dictionary ">
-      <div className="container">
+      <div className="container-form">
         <h1>Dictionary</h1>
         <form className="form" onSubmit={Search}>
           <input
@@ -33,8 +33,10 @@ export default function Dictionary() {
           />
         </form>
       </div>
-      <div className="results-search">
-        <Results results={results} />
+      <div className="container-results">
+        <div className="results-search">
+          <Results results={results} />
+        </div>
       </div>
     </div>
   );

@@ -2,10 +2,6 @@
   background-color: antiquewhite;
 }
 
-.dictionary {
-  background-color: rgb(249, 233, 233);
-}
-
 .app-header {
   text-align: center;
   font-weight: bold;
@@ -17,10 +13,16 @@
   margin: 30px 0;
 }
 
-.dictionary .container {
+.dictionary .container-form,
+.container-results {
   font-weight: bold;
   justify-content: center;
   text-align: center;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(156, 156, 156);
+  background-color: rgb(249, 233, 233);
 }
 
 input {
