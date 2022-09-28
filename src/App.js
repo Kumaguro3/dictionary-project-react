@@ -9,7 +9,15 @@ export default function App() {
           {" "}
           <Dictionary />
         </main>
-        <footer className="app-footer">Coded by Sergent Julie</footer>
+        <footer className="app-footer">
+          Coded by{" "}
+          <a
+            href="https://github.com/Kumaguro3/dictionary-project-react"
+            className="git-link"
+          >
+            Sergent Julie
+          </a>
+        </footer>
       </div>
     </div>
   );
