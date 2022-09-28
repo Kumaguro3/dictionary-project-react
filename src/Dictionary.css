@@ -23,6 +23,11 @@
   padding: 7px;
 }
 
+input,
+input::placeholder {
+  font-size: 17px;
+}
+
 .dictionary .container-form,
 .container-results {
   justify-content: center;
