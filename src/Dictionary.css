@@ -34,10 +34,6 @@
   background-color: rgba(224, 224, 224, 0.7);
 }
 
-.phonetic {
-  text-align: center;
-}
-
 .section {
   justify-content: center;
   padding: 30px;
@@ -58,6 +54,7 @@ input {
 .meaning .definition-text {
   text-align: center;
   font-weight: bold;
+  color: rgba(74, 72, 72, 0.6);
 }
 
 .results .searched-word {
