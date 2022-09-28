@@ -50,19 +50,3 @@ input {
   justify-content: flex-start;
   text-align: start;
 }
-
-.meaning .definition-text {
-  text-align: center;
-  font-weight: bold;
-  color: rgba(74, 72, 72, 0.6);
-}
-
-.results .searched-word {
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.meaning .verb-adj-noun {
-  text-align: center;
-  text-transform: capitalize;
-}
