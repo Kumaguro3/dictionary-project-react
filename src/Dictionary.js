@@ -4,40 +4,57 @@ import Results from "./Results.js";
 import "./Dictionary.css";
 
 export default function Dictionary() {
-  let [keyWord, setKeyWord] = useState(null);
+  let [keyWord, setKeyWord] = useState("Coding");
   let [results, setResults] = useState(null);
+  let [loaded, setLoaded] = useState(false);
 
   function HandleKeyWordChange(event) {
     setKeyWord(event.target.value);
+  }
+
+  function Load() {
+    setLoaded(true);
+    Search();
   }
 
   function HandleResponse(response) {
     setResults(response.data[0]);
   }
 
-  function Search(event) {
-    event.preventDefault();
+  function Search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyWord}`;
     axios.get(apiUrl).then(HandleResponse);
   }
 
-  return (
-    <div className="dictionary ">
-      <div className="container-form">
-        <h1>Dictionary</h1>
-        <form className="form" onSubmit={Search}>
-          <input
-            type="search"
-            autoFocus={true}
-            onChange={HandleKeyWordChange}
-          />
-        </form>
-      </div>
-      <div className="container-results">
-        <div className="results-search">
-          <Results results={results} />
+  function HandleSubmit(event) {
+    event.preventDefault();
+    Search();
+  }
+
+  if (loaded) {
+    return (
+      <div className="dictionary ">
+        <div className="container-form">
+          <h1>What definition are you looking for?</h1>
+          <form className="form" onSubmit={HandleSubmit}>
+            <input
+              type="search"
+              placeholder="Type a word"
+              autoFocus={true}
+              onChange={HandleKeyWordChange}
+              width="100"
+            />
+          </form>
+        </div>
+        <div className="container-results">
+          <div className="results-search">
+            <Results results={results} />
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    Load();
+    return "Loading...";
+  }
 }
