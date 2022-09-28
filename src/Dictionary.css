@@ -1,5 +1,8 @@
 .app {
-  background-color: antiquewhite;
+  background-color: rgb(249, 245, 240);
+  width: fit-content;
+  min-width: 300px;
+  max-width: 1280px;
 }
 
 .app-header {
@@ -15,13 +18,25 @@
 
 .dictionary .container-form,
 .container-results {
-  font-weight: bold;
   justify-content: center;
   text-align: center;
   padding: 30px;
-  margin: 20px;
+  margin: 30px 60px 30px 60px;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px rgb(156, 156, 156);
+  background-color: rgb(249, 233, 233);
+}
+
+.phonetic {
+  text-align: center;
+}
+
+.section {
+  justify-content: center;
+  padding: 30px;
+  margin: 20px 0px 0 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgb(156, 156, 156);
   background-color: rgb(249, 233, 233);
 }
 
@@ -32,13 +47,19 @@ input {
 .results-search {
   justify-content: flex-start;
   text-align: start;
-  margin: 50px;
+}
+
+.meaning .definition-text {
+  text-align: center;
+  font-weight: bold;
 }
 
 .results .searched-word {
   text-align: center;
+  text-transform: capitalize;
 }
 
 .meaning .verb-adj-noun {
   text-align: center;
+  text-transform: capitalize;
 }
