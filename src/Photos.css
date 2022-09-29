@@ -1,7 +1,6 @@
 .Photos img {
   border-radius: 10px;
-
-  margin-bottom: 10px;
-  width: 50%;
-  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+  display: inline;
 }
