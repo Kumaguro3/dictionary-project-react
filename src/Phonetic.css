@@ -1,3 +1,14 @@
+@media only screen and (max-width: 600px) {
+  .container-results {
+    margin: 60px;
+    padding: 5px;
+  }
+}
+
 .phonetic {
   text-align: center;
+}
+
+#player {
+  width: 93%;
 }
