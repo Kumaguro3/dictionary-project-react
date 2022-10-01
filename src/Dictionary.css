@@ -1,6 +1,6 @@
 .app {
-  background: rgb(255, 255, 255) url("dictionary-word-background.webp")
-    no-repeat fixed center;
+  background: rgb(255, 255, 255) url("Dictionary-blurry-image.jpg") no-repeat
+    fixed center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
