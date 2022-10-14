@@ -1,6 +1,5 @@
 .app {
-  background: rgb(255, 255, 255) url("Dictionary-blurry-image.jpg") no-repeat
-    fixed center;
+  background: rgb(255, 255, 255) url("library.jpg") no-repeat fixed center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -13,7 +12,8 @@
   font-weight: bold;
   padding: 30px 0 0 0;
   font-size: 68px;
-  text-shadow: 2px 2px 1px whitesmoke, 2px 2px 1px whitesmoke;
+  color: white;
+  text-shadow: 2px 2px 1px black, 2px 2px 1px black;
 }
 
 .app-footer {
